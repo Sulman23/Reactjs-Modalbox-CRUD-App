@@ -34,11 +34,13 @@ const EmployeeList = () => {
                 <tbody>
                     {
                         employees.map(employee => (
-                            <tr>
-                                <employee employee={employee} />
-                            </tr>
-                        )
-                    )}
+                    
+                                <tr>
+                                    <Employee employee={employee}/>
+                                </tr>
+                          
+                        ))
+                    }
                 </tbody>
             </table>
 
