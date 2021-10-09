@@ -1,3 +1,6 @@
+import React from "react";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/react-bootstrap";
 import EmployeeList from "./Components/EmployeeList";
 import EmployeeContexteProvider from "./Context/EmployeeContext";
 
