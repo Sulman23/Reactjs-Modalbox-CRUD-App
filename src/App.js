@@ -11,7 +11,7 @@ function App() {
         <div className="table-responsive">
           <div className="table-wrapper">
             <EmployeeContexteProvider>
-            <EmployeeList />
+              <EmployeeList />
             </EmployeeContexteProvider>
           </div>
         </div>

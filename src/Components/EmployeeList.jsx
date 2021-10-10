@@ -63,9 +63,9 @@ const EmployeeList = () => {
             <Button variant="secondary" onClick={handleClose}>
               Close
             </Button>
-            <Button variant="primary" onClick={handleClose}>
-              Save Changes
-            </Button>
+            {/* <Button variant="primary" type="submit">
+              Add Employee
+            </Button> */}
           </Modal.Footer>
         </Modal>
 
