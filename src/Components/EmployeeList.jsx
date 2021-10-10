@@ -1,5 +1,4 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
 import { EmployeeContext } from "../Context/EmployeeContext";
 import Employee from "./Employee";
 import { Modal, Button } from 'react-bootstrap';
@@ -10,7 +9,7 @@ const EmployeeList = () => {
 
     const {employees} = useContext(EmployeeContext);
 
-    const [show, setShow] = useState(true);
+    const [show, setShow] = useState(false);
   
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -23,10 +22,10 @@ const EmployeeList = () => {
                         <h2>Manage <b>Employees</b></h2>
                     </div>
                     <div className="col-sm-6">
-                        <Link to={handleShow} className="btn btn-success" data-toggle="modal">
+                        <Button onClick={handleShow} className="btn btn-success" data-toggle="modal">
                             <i className="material-icons">&#xE147;</i> 
                             <span>Add New Employee</span>
-                        </Link>
+                        </Button>
                     </div>
                 </div>
             </div>
@@ -55,7 +54,7 @@ const EmployeeList = () => {
 
             <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>
-            <Modal.Title>Modal heading</Modal.Title>
+            <Modal.Title>Employee Registration</Modal.Title>
           </Modal.Header>
           <Modal.Body>
               <AddForm />
