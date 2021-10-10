@@ -24,7 +24,7 @@ const AddForm = () => {
     const {name, email, address, phone } = newEmployee;
     const formSubmit = (e) => {
         e.preventDefault();
-        // addEmployee = (name, email, address, phone); 
+        // addEmployee = (name, email, address, phone) 
         alert(`Form Submitted ${name}`);   
     }
 
