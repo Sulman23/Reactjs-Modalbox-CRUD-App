@@ -59,7 +59,7 @@ const EditForm = ({theEmployee}) => {
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                 <Form.Label>Phone</Form.Label>
                 <Form.Control 
-                type="number" 
+                type="tel" 
                 placeholder="Phone" 
                 name="phone"
                 value={phone} 
