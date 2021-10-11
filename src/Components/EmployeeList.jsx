@@ -40,7 +40,7 @@ const EmployeeList = () => {
                         <th>Email</th>
                         <th>Address</th>
                         <th>Phone</th>
-                        <th>Actions</th>
+                        <th class="text-center">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -56,7 +56,7 @@ const EmployeeList = () => {
                 </tbody>
             </table>
 
-            <Modal show={show} onHide={handleClose}>
+        <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>
             <Modal.Title>Employee Registration</Modal.Title>
           </Modal.Header>
