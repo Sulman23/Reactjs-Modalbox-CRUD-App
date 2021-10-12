@@ -1,6 +1,6 @@
 import React, {useContext, useState, useEffect } from "react";
 import { EmployeeContext } from "../Context/EmployeeContext";
-import { Modal, Button } from 'react-bootstrap';
+import { Modal, Button, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import EditForm from "./EditForm";
 
 const Employee = ({employee}) => {
@@ -23,8 +23,24 @@ const Employee = ({employee}) => {
             <td>{employee.address}</td>
             <td>{employee.phone}</td>
             <td>
-                <Button onClick={handleShow} class="btn text-warning btn-act" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></Button>
-                <Button onClick={() => deleteEmployee(employee.id)} class="btn text-danger btn-act" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></Button>
+            <OverlayTrigger
+              overlay={
+                <Tooltip id={`tooltip-top`}>
+                  Edit 
+                </Tooltip>
+              }
+            >
+              <Button onClick={handleShow} class="btn text-warning btn-act"><i class="material-icons">&#xE254;</i></Button>
+            </OverlayTrigger>
+            <OverlayTrigger
+                overlay={
+                <Tooltip variant="danger" id={`tooltip-top`}>
+                  Delete
+                </Tooltip>
+                }
+            >
+                <Button onClick={() => deleteEmployee(employee.id)} class="btn text-danger btn-act"><i class="material-icons">&#xE872;</i></Button>
+            </OverlayTrigger>
             </td>
 
         <Modal show={show} onHide={handleClose}>
