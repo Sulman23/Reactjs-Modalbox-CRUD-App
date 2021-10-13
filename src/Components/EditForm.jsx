@@ -65,7 +65,10 @@ const EditForm = ({theEmployee}) => {
                 required
                 />
             </Form.Group>
-            <Button type="submit" variant="success" block>Update Employee</Button>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                 <Button type="submit" variant="success" block>Update Employee</Button>
+            </Form.Group>
+
         </Form>
     );
 }

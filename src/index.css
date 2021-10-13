@@ -10,13 +10,14 @@ body {
 .table-wrapper {
 	background: #fff;
 	padding: 20px 25px;
+	border: 1px dotted gainsboro;
 	border-radius: 3px;
 	min-width: 1000px;
 	box-shadow: 0 1px 1px rgba(0,0,0,.05);
 }
 .table-title {        
 	padding-bottom: 15px;
-	background: #435d7d;
+	background: #3e007c;
 	color: #fff;
 	padding: 16px 30px;
 	min-width: 100%;
@@ -31,7 +32,7 @@ body {
 	float: right;
 }
 .table-title .btn {
-	color: #fff;
+	color: brown;
 	float: right;
 	font-size: 13px;
 	border: none;

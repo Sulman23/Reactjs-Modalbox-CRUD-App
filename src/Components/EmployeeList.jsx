@@ -38,16 +38,18 @@ const EmployeeList = () => {
                         <h2>Manage <b>Employees</b></h2>
                     </div>
                     <div className="col-sm-6">
-                        <Button onClick={handleShow} className="btn btn-success" data-toggle="modal">
+                        <Button onClick={handleShow} className="btn btn-warning" data-toggle="modal">
                             <i className="material-icons">&#xE147;</i> 
                             <span>Add New Employee</span>
                         </Button>
                     </div>
                 </div>
             </div>
-            <Alert onClick={showAlert} variant="success">
-                Employee List Updated Succesfully
+            
+            <Alert show={showAlert} variant="success">
+                Job Done Succefully!
             </Alert>
+
             <table className="table table-striped table-hover">
                 <thead>
                     <tr>
