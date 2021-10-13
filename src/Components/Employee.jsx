@@ -30,7 +30,7 @@ const Employee = ({employee}) => {
                 </Tooltip>
               }
             >
-              <Button onClick={handleShow} class="btn text-warning btn-act"><i class="material-icons">&#xE254;</i></Button>
+              <a onClick={handleShow} class="btn text-warning btn-act"><i class="material-icons">&#xE254;</i></a>
             </OverlayTrigger>
             <OverlayTrigger
                 overlay={
@@ -39,7 +39,7 @@ const Employee = ({employee}) => {
                 </Tooltip>
                 }
             >
-                <Button onClick={() => deleteEmployee(employee.id)} class="btn text-danger btn-act"><i class="material-icons">&#xE872;</i></Button>
+                <a onClick={() => deleteEmployee(employee.id)} class="btn text-danger btn-act"><i class="material-icons">&#xE872;</i></a>
             </OverlayTrigger>
             </td>
 

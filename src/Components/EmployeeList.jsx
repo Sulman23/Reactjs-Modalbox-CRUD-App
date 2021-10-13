@@ -18,17 +18,17 @@ const EmployeeList = () => {
    
     const handleShowAlert = () => {
         setShowAlert(true);
-        setTimeout(() => {
+        setTimeout(()=> {
             setShowAlert(false);
         }, 2000)
     }
     
     useEffect(() => {
-        handleClose() 
+        handleClose();
         return () => {
-         handleShowAlert();
+            handleShowAlert();
         }
-    }, [employees]);
+    }, [employees])
     
     return (
         <>
