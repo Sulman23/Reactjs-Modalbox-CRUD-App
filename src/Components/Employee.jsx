@@ -51,7 +51,7 @@ const Employee = ({employee}) => {
               <EditForm theEmployee={employee} />
           </Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
+            <Button variant="danger" onClick={handleClose}>
               Close
             </Button>
             {/* <Button variant="primary" type="submit">

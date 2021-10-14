@@ -71,7 +71,7 @@ const AddForm = () => {
                 required
                 />
             </Form.Group>
-            <Button type="submit" variant="success" block>Add Employee</Button>
+            <Button type="submit" variant="success" className="form-btn">Add Employee</Button>
         </Form>
     );
 }

@@ -32,7 +32,6 @@ body {
 	float: right;
 }
 .table-title .btn {
-	color: brown;
 	float: right;
 	font-size: 13px;
 	border: none;
@@ -149,6 +148,10 @@ table.table .avatar {
 .modal .modal-header, .modal .modal-body, .modal .modal-footer {
 	padding: 20px 30px;
 }
+.modal-header {
+	background: #45008a;
+	color: rgb(255, 255, 255);
+}
 .modal .modal-content {
 	border-radius: 3px;
 	font-size: 14px;
@@ -167,6 +170,9 @@ table.table .avatar {
 }
 .modal textarea.form-control {
 	resize: vertical;
+}
+.form-btn {
+	width: -webkit-fill-available;
 }
 .modal .btn {
 	border-radius: 2px;

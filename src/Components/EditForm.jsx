@@ -65,8 +65,8 @@ const EditForm = ({theEmployee}) => {
                 required
                 />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                 <Button type="submit" variant="success" block>Update Employee</Button>
+            <Form.Group className="mb-3 d-grid gap-2" controlId="exampleForm.ControlInput1">
+                 <Button type="submit" variant="warning" block>Update Employee</Button>
             </Form.Group>
 
         </Form>
